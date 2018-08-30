@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+          <div class="wrapper__max-score">
+            *for WIN you need <span class="max-score">200</span> points !
+          </div>
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            <input type="text" placeholder="Max score" class="add-input">
+            <button class="btn-add"><i class="ion-ios-download-outline"></i>Add</button>
+            
+            <img src="dice-5.png" alt="Dice" class="dice">
+            <img src="dice-5.png" alt="Dice" class="dice dice--2">
+
+            <div class="FAQ">
+              <i class="fas fa-question-circle"></i>
+             </div>
+            
+            <div class="overlay">
+               <h2 class="overlay--head">GAME RULES:</h2>
+               <ul class="overlay__list">
+                 <li class="overlay__item">- The game has 2 players, playing in rounds</li>
+                 <li class="overlay__item">- In each turn, a player rolls a dices as many times as he whishes. Each result get added to his <b>ROUND</b> score</li>
+                 <li class="overlay__item">- <b>BUT</b>, if the player rolls a 1, all his <b>ROUND</b> score gets lost. After that, it's the next player's turn</li>
+                 <li class="overlay__item">- The player can choose to 'Hold', which means that his <b>ROUND</b> score gets added to his <b>GLOBAL</b> score. After that, it's the next player's turn</li>
+                 <li class="overlay__item">- The first player to reach 100 <b>(BY DEFAULT)</b> points on <b>GLOBAL</b> score wins the game</li>
+                 <li class="overlay__item">- A player looses his <b>ENTIRE</b> score when he rolls two 6 in a row on any of the dices. After that, it's the next player's turn</li>
+                 <li class="overlay__item">- You can input the <b>WINNING</b> score in the input and then press <b>ADD</b></li>
+               </ul>
+               <div class="overlay__close">
+                <i class="fas fa-times-circle"></i>
+               </div>
+               <p>*not adaptive. Designed by @jonasschmedtman </p>
+            </div>
+        </div>
+
+        
+        
+        <script src="app.js"></script>
+    </body>
+</html>
