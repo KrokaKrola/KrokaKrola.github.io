@@ -53,7 +53,7 @@ let grid;
 let cols;
 let rows;
 let generation = 0;
-let resolution = 40;
+let resolution = 20;
 let godMode;
 
 function setup() {
