@@ -76,7 +76,7 @@ function setup() {
 
 function draw() {
   background(0);
-  frameRate(120);
+  frameRate(25);
 
   let newI = Math.ceil(mouseX / resolution);
   let newJ = Math.ceil(mouseY / resolution);
